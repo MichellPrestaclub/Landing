@@ -1,0 +1,113 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary:#283478;
+    --secondary:#F6A117;
+}
+
+
+@font-face {
+    font-family: 'ag_book_roundedmedium';
+    src: url('fuentes/ag_book_rounded_medium-webfont.woff2') format('woff2'),
+         url('fuentes/ag_book_rounded_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face{
+    font-family: 'Roboto-BoldCondensed';
+    src:url('fuentes/Roboto-BoldCondensed')format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    margin: 0;
+}
+
+.nav-text{
+    width: 100%;
+    display: flex;
+    padding: 0 10px;
+    justify-content:space-evenly;
+}
+.img-logo-landing{
+    width: 200px;
+}
+.cuerpo-landing {
+    display: grid;
+    width: 100%;
+    color: #ffff;
+    grid-template-columns: 50% 50%;
+    padding: 70px 50px;
+    background-color: var(--primary);
+}
+.landing-partes-amarillas{
+    color: var(--secondary);
+}
+.titulo-landing{
+    padding-right: 20px;
+}
+.titulo-landing h1{
+    font-family: 'ag_book_roundedmedium';
+}
+.titulo-landing h4{
+    font-family: 'Roboto-BoldCondensed';
+}
+.titulo-landing .soluciones h4{
+    font-family: 'ag_book_roundedmedium';
+}
+.titulo-landing p{
+    font-size: 18px;
+}
+
+.cuerpo-form-landing h3{
+    font-family: 'ag_book_roundedmedium';
+}
+.button-landing{
+    padding: 10px 15px;
+    background-color: var(--secondary);
+    color: #ffff;
+    border: none;
+    font-family: 'ag_book_roundedmedium';
+    font-size: 18px;
+    border-radius: 5px;
+}
+.button-landing:hover{
+   color: var(--primary);
+   transition: 0.5s;
+   background-color: #ffff;
+}
+.footer-container{
+    padding: 20px 50px;
+}
+.footer{   
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    justify-content:space-around;
+}
+.footer-logo{
+    width: 200px;
+}
+.divisor-align{
+    display: flex;
+    justify-content: center;
+}
+.divisor-footer{
+    width: 100%;
+    border-bottom: 0.5px solid #ffff;
+}
+@media(max-width:825px){
+    .cuerpo-landing{
+        display: block;
+    }
+    .titulo-landing{
+        padding: 0;
+    }
+}
+
