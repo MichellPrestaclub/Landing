@@ -1,0 +1,14 @@
+
+$nombre = 'Prueba';
+$dni = '423223';
+$correo = 'prueba@gmail.com';
+$celular = '999888777';
+$fecha = date('Y-m-d H:i:s'); //Sacamos la hora y fecha actual
+
+$sql = "INSERT INTO clientelanding (id,nombres,dni,correo,celular,fecha) VALUES (NULL,'$nombre','$dni','$correo','$celular','$fecha');";
+if (($result = mysqli_query($conn, $sql)) === false) {
+    die(mysqli_error($conn));
+} else {
+    echo "<br>Logrado: " . $sql . "<br>" . mysqli_error($conn);
+}
+mysqli_close($conn);
