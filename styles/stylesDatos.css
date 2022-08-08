@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #1250b4;
+    --secondary: #F6A117;
+}
+body{
+    background-image: url(https://prestaclub.com/wp-content/uploads/2022/08/fondo-para-pagina.png);
+    background-size:cover;
+    background-position:bottom;
+}
+.container-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.button-exportar{
+    background-color: var(--secondary);
+    color: #ffff;
+    border-radius: 3px;
+    border:none;
+    padding: 10px 20px;
+}
+.button-exportar:hover{
+    background-color: var(--primary);
+    color: #ffff;
+}
+/*-------------------TABLA--------------------  */
+.container{
+    margin-top: 100px;
+    width: 100%;
+}
+.container-tabla{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.tabla-datos{   
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 50px;
+    background-color: #c7c7c7;
+}
+.tabla-datos .tr-header{
+    background-color: var(--primary);
+    color: #ffff;
+}
+.tr-datos:hover{
+   background-color: #8f8f8f;
+}
+.tabla-datos th{
+    padding:10px 35px;
+}
